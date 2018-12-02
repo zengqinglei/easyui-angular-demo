@@ -1,0 +1,115 @@
+.sidemenu .accordion .panel-title{
+    color: #b8c7ce;
+}
+.sidemenu .accordion .accordion-header{
+    background: #222d32;
+    color: #b8c7ce;
+}
+.sidemenu .accordion .accordion-body{
+    background: #2c3b41;
+    color: #8aa4af;
+}
+.sidemenu .accordion .accordion-header-selected{
+    background: #1e282c;
+}
+.sidemenu .tree-node-hover{
+    background: #2c3b41;
+    color: #fff;
+}
+.sidemenu .tree-node-selected{
+    background: #2c3b41;
+    color: #fff;
+}
+.sidemenu .accordion-header .panel-tool{
+    display: none;
+}
+.sidemenu .accordion-header::after,
+.sidemenu .tree-node-nonleaf::after{
+    display: inline-block;
+    vertical-align: top;
+    border-style: solid;
+    transform:rotate(45deg);
+    width: 4px;
+    height: 4px;
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 0 1px 1px 0;
+}
+.sidemenu .accordion-header-selected::after{
+    transform:rotate(-135deg);
+}
+.sidemenu .tree-node-nonleaf::after{
+    transform:rotate(-135deg);
+}
+.sidemenu .tree-node-nonleaf-collapsed::after{
+    transform:rotate(45deg);
+}
+.sidemenu-collapsed .accordion-header::after{
+    display: none;
+}
+.sidemenu-tooltip .accordion{
+    border-color: #1e282c;
+}
+ 
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.app-logo{
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    margin: 13px 10px;
+}
+.main-header{
+    background: #3c8dbc;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;;
+}
+.main-title{
+    background: #367fa9;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.main-bar{
+    background: #3c8dbc;
+}
+.main-toggle{
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 10px;
+}
+.main-body{
+    background: #ecf0f5;
+    min-height: 400px;
+    max-height: calc(100vh - 50px);
+    width: calc(100vw - 220px);
+    min-width: 1024px;
+    padding: 2rem;
+    overflow: auto;
+}
+.sidebar-body{
+    background: #222d32;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+.sidebar-user{
+    color: #fff;
+    padding: 20px;
+    line-height: 20px;
+}
+.sidebar-body .panel-with-icon{
+    padding-left: 20px;
+}
+.sidebar-body .tree-title{
+    padding-left: 22px;
+}

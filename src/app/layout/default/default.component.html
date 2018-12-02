@@ -1,0 +1,24 @@
+<div class="f-column">
+  <div class="main-header f-row">
+    <div class="f-row f-full">
+      <div class="main-title f-animate f-row" [style.width.px]="width">
+        <img class="app-logo" src="/favicon.ico">
+        <span *ngIf="!collapsed">{{title}}</span>
+      </div>
+      <div class="main-bar f-full">
+        <span class="main-toggle fa fa-bars" (click)="toggle()"></span>
+      </div>
+    </div>
+  </div>
+  <div class="f-row f-full">
+    <div class="sidebar-body f-animate" [style.width.px]="width">
+      <div *ngIf="!collapsed" class="sidebar-user">
+        User Panel
+      </div>
+      <eui-sidemenu [data]="menus" [border]="false" [collapsed]="collapsed" (itemClick)="onItemClick($event)"></eui-sidemenu>
+    </div>
+    <div class="main-body f-full">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
