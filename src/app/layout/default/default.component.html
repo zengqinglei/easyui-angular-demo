@@ -13,7 +13,13 @@
   <div class="f-row f-full">
     <div class="sidebar-body f-animate" [style.width.px]="width">
       <div *ngIf="!collapsed" class="sidebar-user">
-        User Panel
+        <div class="user-avatar">
+          <img src="https://ng-alain.github.io/ng-alain/assets/tmp/img/avatar.jpg" class="user-avatar-img" />
+        </div>
+        <div class="user-info">
+          <p><strong>Admin</strong></p>
+          <p>admin@live.cn</p>
+        </div>
       </div>
       <eui-sidemenu [data]="menus" [border]="false" [collapsed]="collapsed" (itemClick)="onItemClick($event)"></eui-sidemenu>
     </div>

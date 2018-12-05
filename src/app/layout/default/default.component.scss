@@ -57,6 +57,10 @@
 html,body{
     margin: 0;
     padding: 0;
+    font-family: "Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
 }
 .app-logo{
     width: 24px;
@@ -103,9 +107,30 @@ html,body{
     overflow-y: auto;
 }
 .sidebar-user{
+    display: flex;
     color: #fff;
-    padding: 20px;
-    line-height: 20px;
+    padding: 15px;
+    align-items: center;
+}
+.sidebar-user .user-avatar{
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+.sidebar-user .user-avatar-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.sidebar-user .user-info{
+    margin-left: 5px;
+    width: 133px;
+}
+.sidebar-user .user-info p{
+    margin:2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .sidebar-body .panel-with-icon{
     padding-left: 20px;
